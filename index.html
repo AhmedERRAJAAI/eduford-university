@@ -19,7 +19,9 @@
 
 </head>
 <body>
-<!-- start header -->
+
+<div class="section-one">
+    <!-- start header -->
     <header>
         <div class="container">
         <div class="image">
@@ -27,9 +29,9 @@
             </a>
         </div>
         <nav>
-            <div class="nav-button">
             <i class="fas fa-bars toggle-bars"></i>
-        </div>
+        <div class="phone-nav">
+            <i class="fas fa-times close-icon"></i>
             <ul>
                 <li><a href="">Home</a></li>
                 <li><a href="">About</a></li>
@@ -37,6 +39,7 @@
                 <li><a href="">Blog</a></li>
                 <li><a href="">contact</a></li>
             </ul>
+        </div>
             
         </nav>
     </div>
@@ -48,12 +51,28 @@
     <div class="container">
         <div class="text">
             <h1>World's biggest university</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum voluptates architecto illo pariatur ex numquam adipisicing elit. Eveniet.</p>
-            <a href="https://flsh.uit.ac.ma/"><p class="see-more">visit us to see more</p></a>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum voluptates architecto. illo pariatur <br> ex numquam adipisicing elit. Eveniet.</p>
+            <a href="https://flsh.uit.ac.ma/">
+                <p class="see-more">visit us to see more</p>
+            </a>
         </div>
     </div>
 </div>
 <!-- end landing -->
-    
+</div>  
+
+
+
+
+<!-- <script>
+    var navLinks = document.getElementById('navLinks');
+    function showMenu(){
+        navLinks.Style.right ="0";
+    }
+    function hideMenu(){
+        navLinks.Style.right ="-200px";
+    }
+</script> -->
+
 </body>
 </html>
