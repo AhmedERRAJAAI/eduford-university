@@ -130,7 +130,7 @@ a{
     background-size: cover;
     background-position: center;
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     position: relative;
     overflow: hidden;
 }
@@ -189,6 +189,43 @@ a{
         margin-left: 30px;
     }
 }
+
+/*----------------media height  -----------*/
+@media (max-height:400px){
+    .landing .nav .logo{
+        height: 40px;
+    }
+    .landing .nav ul{
+        background-color: var(--main-color);
+        width: 200px;
+        height: 100vh;
+        text-align: left;
+        color: white;
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        right: -200px;
+        transition: 0.3s;
+    }
+    .landing .nav ul .close-icon{
+        margin: 10px;
+        font-size: 19px;
+    }
+    .landing .nav .open-icon{
+        color: white;
+        font-size: 20px;
+        flex: 1;
+        text-align: right;
+    }
+    .landing .nav li{
+        display: block;
+        margin-top: 30px;
+        margin-left: 30px;
+    }
+}
+/*----------------end media height  -----------*/
+
+
 @media(min-width:768px){
     .landing .nav li a::after{
         content: "";
@@ -232,6 +269,33 @@ a{
     width: 70%;
     margin: 40px auto 60px;
 }
+
+/* ---------start media height--------- */
+@media (max-height:400px){
+    .landing .text h1{
+        font-size: 40px;
+    }
+    .landing .text p{
+        font-size: 14px;
+        line-height: 1.6;
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+    .landing .text a{    
+        padding: 5px 10px;
+        transition: 0s;
+        position: relative;
+    }
+    .landing .nav .open-icon{
+        display: block;
+    }
+    .landing .nav ul .close-icon{
+        display: block;
+    }
+}
+/* ---------end media height--------- */
+
 @media (max-width:768px){
     .landing .text h1{
         font-size: 40px;
