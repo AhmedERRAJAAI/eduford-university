@@ -324,6 +324,7 @@ a{
     grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
     grid-gap: 45px;
      */
+     width: 90%;
      display: flex;
      justify-content: space-between;
      flex-wrap: wrap;
@@ -336,7 +337,7 @@ a{
     background-color: #fff3f3;
     border-radius: 8px;
     transition: 0.2s;
-    margin: 0 20px 20px ; 
+    margin-top: 20px; 
 }
 /* --------- under evaluation --------- */
 /* @media (max-width:1200px){
@@ -370,24 +371,14 @@ a{
 }
 .campus .container .campus-content{
     max-width: 100%;
-    display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
-    grid-column-gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 .campus .campus-content .box{
+    width: 300px;
     position: relative;
-    margin: 0;
-    margin: 20px auto 0px ;
-}
-@media (max-width:768px){
-    .campus .container .campus-content{
-        max-width: 100%;
-        display: grid;
-        grid-template-columns: 1fr;
-    }
-    .campus .campus-content .box{
-        
-    }
+    margin: 20px auto 0;
 }
 .campus .campus-content .box::before{
     content: "";
@@ -405,6 +396,7 @@ a{
     max-width: 100%;
     border-radius: 5px;
 }
+    
 .campus .campus-content .box h3{
     text-align: center;
     text-transform: uppercase;
@@ -420,3 +412,74 @@ a{
     color: white;
 }
 /* end campus section */
+
+/* start Our facilities section */
+.facilities{
+    padding-bottom: var(--main-padding);
+}
+.facilities .facilities-content{
+    max-width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.facilities .facilities-content .box img{
+    width: 100%;
+    border-radius: 6px;
+}
+.facilities .facilities-content .box{
+    width: 300px;
+    margin: 20px auto 0;
+}
+.facilities .facilities-content .box h4{
+    text-transform: capitalize;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.facilities .facilities-content .box p{
+    color: #777;
+    width: 100%;
+    text-align: left;
+    line-height: 1.6;
+}
+/* end Our facilities section */
+
+/* start testimonials section */
+
+.testimonials{
+    padding-bottom: var(--main-padding);
+}
+.testimonials .testimoials-container{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 40px;
+}
+@media (max-width:768px){
+    .testimonials .testimoials-container{
+        grid-template-columns: 1fr;
+        grid-row-gap: 20px;
+    }
+}
+.testimonials .testimoials-container .box{
+    background-color: #fff3f3;
+    padding: 30px;
+    display: flex;
+}
+.testimonials .testimoials-container .box img{
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.testimonials .testimoials-container .box p{
+    color: var(--font-color);
+    line-height: 1.6;
+}
+.testimonials .testimoials-container .box h3{
+    text-transform: capitalize;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.testimonials .testimoials-container .box i{
+    color: tomato;
+}
+/* end testimonials section */
