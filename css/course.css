@@ -1,6 +1,3 @@
-
-/* start global rules */
-
 :root{
     --main-color:tomato;
     --main-padding: 70px;
@@ -106,7 +103,7 @@ a{
     background-size: cover;
     background-position: center;
     width: 100%;
-    min-height: 100vh;
+    min-height: 60vh;
     position: relative;
     overflow: hidden;
 }
@@ -330,214 +327,110 @@ a{
 }
 /* end courses section */
 
-/* start campus section */
-
-.campus{
+/* start thanks section */
+.thanks{
     padding-bottom: var(--main-padding);
 }
-.campus .container .campus-content{
-    max-width: 100%;
-    display: flex;
-    flex-wrap: wrap;
+.thanks .thanks-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
     justify-content: space-between;
+    grid-gap: 14px;
 }
-.campus .campus-content .box{
-    width: 30%;
-    position: relative;
-    margin: 20px auto 0;
-}
-
-.campus .campus-content .box::before{
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
+.thanks .thanks-content div{
     width: 100%;
-    height: 100%;
-    transition: 0.3s;
-    border-radius: 6px;
+    min-height: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid tomato;
+    background-color: tomato;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.15s;
 }
-.campus .campus-content .box:hover::before{
-    background-color: rgba(253, 62, 62, 0.65);
+.thanks .thanks-content div:hover{
+    background: none;
+    color: none;
 }
-.campus .campus-content img{
-    height: 100%;
-    max-width: 100%;
-    max-height: 100%;
-    border-radius: 5px;
+.thanks .thanks-content div p{
+    color: white;
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: bold;
+    transition: 0.15s;
 }
-@media (max-width: 768px){
-    .campus .campus-content img{
-        height: 300px;
-    }
-}
-.campus .campus-content .box h3{
-    text-align: center;
-    text-transform: uppercase;
+.thanks .thanks-content div:hover p{
     color: transparent;
+}
+.thanks .thanks-content .one::after{
+    content:"UPLOADING ...";
     position: absolute;
-    top: 95%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    transition: 0.3s;
-}
-.campus .campus-content .box:hover h3{
-    top: 50%;
-    color: white;
-}
-/* end campus section */
-
-/* start Our facilities section */
-.facilities{
-    padding-bottom: var(--main-padding);
-}
-.facilities .facilities-content{
-    max-width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-}
-.facilities .facilities-content .box img{
-    width: 100%;
-    border-radius: 6px;
-}
-.facilities .facilities-content .box{
-    width: 300px;
-    margin: 20px auto 0;
-}
-.facilities .facilities-content .box h4{
-    text-transform: capitalize;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-.facilities .facilities-content .box p{
-    color: #777;
-    width: 100%;
-    text-align: left;
-    line-height: 1.6;
-}
-/* end Our facilities section */
-
-/* start testimonials section */
-
-.testimonials{
-    padding-bottom: var(--main-padding);
-}
-.testimonials .testimoials-container{
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-column-gap: 40px;
-}
-@media (max-width:768px){
-    .testimonials .testimoials-container{
-        grid-template-columns: 1fr;
-        grid-row-gap: 20px;
-    }
-}
-.testimonials .testimoials-container .box{
-    background-color: #fff3f3;
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
-    border-radius: 6px;
-}
-.testimonials .testimoials-container .box img{
-    width: 50px;
-    border-radius: 50%;
-    margin-right: 20px;
-}
-.testimonials .testimoials-container .box p{
-    color: var(--font-color);
-    line-height: 1.6;
-}
-@media (max-width:768px){
-    
-    .testimonials .testimoials-container .box{
-        flex-direction: column;
-        text-align: center;
-    }
-    .testimonials .testimoials-container .box img{
-        height: 50px;
-        margin: 0 auto 10px;
-    }
-    .testimonials .testimoials-container .box p{
-        line-height: 1;
-        padding-top: 3px;
-        padding-bottom: 3px;
-    }
-}
-.testimonials .testimoials-container .box h3{
-    text-transform: capitalize;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-.testimonials .testimoials-container .box i{
+    z-index: -1;
+    font-size: 20px;
+    font-weight: bold;
     color: tomato;
 }
-/* end testimonials section */
-
-/* start enroll section */
-.enroll{
-    padding-bottom: var(--main-padding);
+.thanks .thanks-content .two::after{ 
+    content:"UPLOADING ...";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: -1;
+    font-size: 20px;
+    font-weight: bold;
+    color: tomato;
 }
-.enroll .enroll-content{
-    margin-left: 0;
-    margin-right: 0;
-    background-image: linear-gradient(rgba(4,26,20,0.7),rgba(4,26,20,0.7)), url("../imgs/banner2.jpg");
-    background-size: cover;
-    background-position: center;
-    text-align: center;
-    padding: 60px 90px;
-    border-radius: 10px;
+.thanks .thanks-content .three::after{
+    content:"UPLOADING ...";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: -1;
+    font-size: 20px;
+    font-weight: bold;
+    color: tomato;
 }
-@media (max-width:992px){
-    .enroll .enroll-content{
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
+.thanks .thanks-content .four::after{
+    content:"UPLOADING ...";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: -1;
+    font-size: 20px;
+    font-weight: bold;
+    color: tomato;
 }
-@media (max-width:600px){
-    .enroll .enroll-content{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        padding: 20px 30px;
-    }
+.thanks .thanks-content .five::after{
+    content:"UPLOADING ...";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: -1;
+    font-size: 20px;
+    font-weight: bold;
+    color: tomato;
 }
-.enroll .enroll-content h3{
-    width: 90%;
-    color: white;
-    text-transform: capitalize;
-    font-size: 40px;
-    margin:20px auto;
-    line-height: 1.6;
+.thanks .thanks-content .six::after{
+    content:"UPLOADING ...";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: -1;
+    font-size: 20px;
+    font-weight: bold;
+    color: tomato;
 }
-@media (max-width:992px){
-    .enroll .enroll-content h3{
-        font-size: 30px;
-        text-align: left;
-    }
-}
-@media (max-width:600px){
-    .enroll .enroll-content h3{
-        font-size: 20px;
-        text-align: center;
-    }
-}
-.enroll .enroll-content .button{
-    width: 15%;
-    margin: 0 auto;
-    cursor: pointer;
-}
-@media (max-width:992px){
-    .enroll .enroll-content .button{
-        width: fit-content;
-        height: fit-content;
-    }
-}
-/* end enroll section */
+/* start thanks section */
 
 /* start footer */
 .footer .content{

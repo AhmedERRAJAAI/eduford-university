@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eduford University</title>
+    <!-- styling file -->
+    <link rel="stylesheet" href="../css/about.css">
+    <!-- normalize file -->
+    <link rel="stylesheet" href="../css/normalize.css">
+    <!-- icons library -->
+    <link rel="stylesheet" href="../css/all.min.css">
+    <!-- main font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- start landing -->
+    <div class="about-landing">
+        <div class="container">
+        <div class="nav">
+            <a href="../index.html"><img src="../imgs/logo.png" alt="" class="logo"></a>
+            <i class="fas fa-bars open-icon" onclick="openNav()"></i>
+            <ul id="sideNav">
+                <i class="fas fa-times close-icon" onclick="closeNav()"></i>
+                <li><a href="../index.html">home</a></li>
+                <li><a href="about.html">about</a></li>
+                <li><a href="course.html">course</a></li>
+                <li><a href="blog.html">blog</a></li>
+                <li><a href="contact.html">contact</a></li>
+            </ul>
+        </div>
+        <div class="text">
+            <h1>about</h1>
+        </div>
+        </div>
+    </div>
+<!-- end about landing -->
+
+<!-- start content -->
+<div class="about-content">
+    <div class="container">
+        <div class="text">
+            <h2>we are the world largest university</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore fuga, nihil repellat eum alias minima voluptatum veniam! Quasi ratione quis explicabo impedit dolorum itaque quia, adipisci minus expedita corporis libero. Lorem ipsum amet consectetur adipisicing elit. Ipsa, autem!</p>
+            <input class="button" type="button" value="Contact us">
+        </div>
+       <div class="img-box">
+        <img src="../imgs/about.jpg" alt="">
+       </div>
+    </div>
+</div>
+<!-- end content -->
+
+
+<!-- start footer -->
+<div class="footer">
+    <div class="content">
+        <p class="copy"><i class="far fa-copyright"></i>all rights reserved 2021</p>
+        <p>created by <span><a title="Linkedin" href="https://www.linkedin.com/in/ahmed-errajaai-822847199/"> Ahmed ERRAJAAI </a><a title="Github" href="https://github.com/AhmedERRAJAAI"><i class="fab fa-github"></i></a> </span></p>
+    </div>
+</div>
+<!-- end footer -->
+
+<!---------js script--------->
+    <script>
+        var sideNav = document.getElementById("sideNav");
+        function openNav(){
+            sideNav.style.right = "0";
+        }
+        function closeNav(){
+            sideNav.style.right = "-200px";
+        }
+    </script>
+</div>
