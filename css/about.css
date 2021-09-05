@@ -227,25 +227,44 @@ a{
 
 /* start about content */
 .about-content{
-    padding-top: var(--main-padding);
     padding-bottom: var(--main-padding);
 }
 .about-content .container{
-    display: grid;
-    grid-template-columns: 400px auto;
-    grid-column-gap:30px;
+    display: flex;
+    justify-content: space-between;
 }
-.about-content .container .text h2{
-    width: 90%;
-    line-height: 1.4;
-    font-size: 25px;
-    text-transform: capitalize;
-    margin-bottom: 20px;
+.about-content .container .text{
+    width: 55%;
+}
+.about-content .container .img-box{
+    width: 35%;
 }
 .about-content .container .text p{
-    color: var(--font-color);
     text-align: justify;
-    line-height: 1.4;
+    margin-top: 18px;
+    line-height: 1.5;
+    color: #777;
+}
+.about-content .container .text h2{
+    text-transform: capitalize;
+}
+@media (max-width:992px){
+    .about-content .container{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .about-content .container .text{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 40px;
+    }
+    .about-content .container .img-box{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 .about-content .container .text .button{
     display: block;
@@ -258,10 +277,9 @@ a{
 .about-content .container .text .button:hover{
     color: white;
 }
-.about-content .img-box{
+/* .about-content .img-box{
     width: 90%;
-    margin-left: auto;
-}
+} */
 .about-content img{
     max-height: 100%;
     max-width: 100%;
