@@ -79,8 +79,6 @@ a{
 
 
 /* start-nd component */
-
-/* end-nd component */
 .button{
     text-transform: uppercase;
     color: white;
@@ -88,12 +86,15 @@ a{
     padding: 10px 15px;
     transition: 0.15s;
     position: relative;
+    cursor: pointer;
 }
 .button:hover{
     background-color: tomato;
     border-color: tomato;
     box-shadow: 0px 0px 30px 5px tomato;
 }
+/* end-nd component */
+
 /* end components */
 
 /* start landing */
@@ -162,7 +163,6 @@ a{
         margin-left: 30px;
     }
 }
-
 /*----------------media height  -----------*/
 @media (max-height:400px){
     .landing .nav .logo{
@@ -232,28 +232,14 @@ a{
     width: 90%;
 }
 .landing .text h1{
-    font-size: 80px;
+    font-size: 45px;
     margin-bottom: 0;
     text-transform: capitalize;
 }
-.landing .text p{
-    font-size: 17px;
-    line-height: 1.8;
-    width: 70%;
-    margin: 40px auto 60px;
-}
-
 /* ---------start media height--------- */
 @media (max-height:400px){
     .landing .text h1{
         font-size: 40px;
-    }
-    .landing .text p{
-        font-size: 14px;
-        line-height: 1.6;
-        width: 100%;
-        margin-top: 20px;
-        margin-bottom: 50px;
     }
     .landing .text a{    
         padding: 5px 10px;
@@ -271,14 +257,7 @@ a{
 
 @media (max-width:768px){
     .landing .text h1{
-        font-size: 40px;
-    }
-    .landing .text p{
-        font-size: 14px;
-        line-height: 1.6;
-        width: 100%;
-        margin-top: 20px;
-        margin-bottom: 50px;
+        font-size: 30px;
     }
     .landing .text a{    
         padding: 5px 10px;
@@ -287,157 +266,117 @@ a{
     }
 }
 /* end landing */
-/* start courses section */
-.courses{
+
+/*start find */
+
+.find{
     padding-bottom: var(--main-padding);
 }
-.courses .container .courses-types{
-     width: 100%;
-     display: flex;
-     justify-content: space-evenly;
-     flex-wrap: wrap;
-     
+.find .map{
+    max-width: 100%;
+    margin: 0 auto 60px;
 }
-.courses .box{
-    min-width: 300px;
-    flex: 1;
-    text-align: center;
-    padding: 30px 10px;
-    background-color: #fff3f3;
-    border-radius: 8px;
-    transition: 0.2s;
-    margin: 20px auto 0;
+.find .map iframe{
+    width: 100%;
+    height: 500px;
 }
-@media (min-width:664px){
-    .courses .box{
-        margin-left: 10px;
-        margin-right: 10px;
+@media (max-width:768px){
+    .find .map iframe{
+        height: 250px;
+    }
+    .find .map{
+        margin-bottom: 20px;
     }
 }
-.courses .box:hover{
-    box-shadow: 0px 0px 9px -1px #777;
-    transform: scale(1.02);
-}
-.courses .box h4{
-    text-transform: capitalize;
-    padding-bottom: 20px;
-}
-.courses .box p{
-    color: var(--font-color);
-}
-/* end courses section */
 
-/* start thanks section */
-.thanks{
-    padding-bottom: var(--main-padding);
-}
-.thanks .thanks-content{
-    display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+/*end find */
+
+.address-contact-container{
+    display: flex;
     justify-content: space-between;
-    grid-gap: 14px;
 }
-.thanks .thanks-content div{
-    width: 100%;
-    min-height: 250px;
+@media (max-width:768px){
+    .address-contact-container{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+}
+/* start comment */
+.leave-comment{
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
-    border: 2px solid tomato;
-    background-color: tomato;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: 0.15s;
+    border: 1px solid tomato;
 }
-.thanks .thanks-content div:hover{
-    background: none;
-    color: none;
-}
-.thanks .thanks-content div p{
-    color: white;
+.leave-comment .comment-form-content h4{
     text-transform: capitalize;
-    font-size: 20px;
-    font-weight: bold;
-    transition: 0.15s;
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #444;
 }
-.thanks .thanks-content div:hover p{
-    color: transparent;
-    display: none;
+.leave-comment .comment-form-content .input:focus{
+    outline-color: tomato;
+    outline-width: 1px;
 }
-.thanks .thanks-content .one::after{
-    content:"UPLOADING ...";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    z-index: -1;
-    font-size: 20px;
-    font-weight: bold;
+.leave-comment .comment-form-content .input{
+    width: 100%;
+    border: 1px solid #eee;
+}
+.leave-comment .comment-form-content{
+    display: block;
+    padding: 18px;
+}
+.leave-comment .comment-form-content input{
+    margin-bottom: 10px;
+    margin-top: 10px;
+    height: 40px;
+}
+.leave-comment .comment-form-content .input::placeholder{
+    padding: 8px;
+    color: #999;
+    text-transform: capitalize;
+}
+.leave-comment .comment-form-content textarea{
+    height: 140px;
+    margin-bottom: 20px;
+}
+.leave-comment .comment-form-content .button{
+    display: block;
+    color: #333;
+    border: tomato;
+    margin-left: auto;
+}
+/*end comment */
+
+/* start address */
+
+.address-contact-container .row{
+    margin: 50px 40px;
+    display: flex;
+    align-items: center;
+}
+.address-contact-container .row p{
+    line-height: 1.4;
+}
+.address-contact-container .row p em{
+    color: #777;
+}
+.address-contact-container .row p strong{
+    text-transform: capitalize;
+}
+.address-contact-container .row i{
     color: tomato;
+    font-size: 26px;
+    margin-right: 30px;
 }
-.thanks .thanks-content .two::after{ 
-    content:"UPLOADING ...";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    z-index: -1;
-    font-size: 20px;
-    font-weight: bold;
-    color: tomato;
-}
-.thanks .thanks-content .three::after{
-    content:"UPLOADING ...";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    z-index: -1;
-    font-size: 20px;
-    font-weight: bold;
-    color: tomato;
-}
-.thanks .thanks-content .four::after{
-    content:"UPLOADING ...";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    z-index: -1;
-    font-size: 20px;
-    font-weight: bold;
-    color: tomato;
-}
-.thanks .thanks-content .five::after{
-    content:"UPLOADING ...";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    z-index: -1;
-    font-size: 20px;
-    font-weight: bold;
-    color: tomato;
-}
-.thanks .thanks-content .six::after{
-    content:"UPLOADING ...";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    z-index: -1;
-    font-size: 20px;
-    font-weight: bold;
-    color: tomato;
-}
-/* start thanks section */
+/* end address */
 
 /* start footer */
 .footer .content{
     background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("../imgs/banner.png");
     background-size: cover;
-    padding: 15px 10px;
+    padding: 10px 10px;
     text-align: center;
     color: white;
     text-transform: capitalize;
@@ -445,7 +384,7 @@ a{
 }
 .footer .content p{
     padding-top: 8px;
-    padding-bottom: 8px;
+    padding-bottom: 4px;
 }
 .footer .content .copy i{
     color: tomato;

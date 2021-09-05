@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eduford University</title>
     <!-- styling file -->
-    <link rel="stylesheet" href="../css/course.css">
+    <link rel="stylesheet" href="../css/find.css">
     <!-- normalize file -->
     <link rel="stylesheet" href="../css/normalize.css">
     <!-- icons library -->
@@ -29,59 +29,63 @@
                 <li><a href="about.html">about</a></li>
                 <li><a href="course.html">course</a></li>
                 <li><a href="blog.html">blog</a></li>
-                <li><a href="find.html">contact</a></li>
+                <li><a href="find.html">find</a></li>
             </ul>
         </div>
         <div class="text">
-            <h1>Courses</h1>
+            <h1>Find us</h1>
         </div>
     </div>
 </div>
 <!-- end landing -->
 
-<!-- start courses section -->
-<div class="courses">
+<!-- start find us content -->
+
+<div class="find">
     <div class="container">
-        <div class="main-heading">
-            <h3>courses we offer</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3298.002818492624!2d-6.585806902127029!3d34.24847171774579!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sar!2sma!4v1630839259604!5m2!1sar!2sma" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
-        <div class="courses-types">
-            <div class="box">
-                <h4>intermediate</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo esse sapiente, voluptates amet quibusdam dolorum temporibus aliquam, dolor laborum voluptatibus accusamus.</p>
-            </div>
-            <div class="box">
-                <h4>degree</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo esse sapiente, voluptates amet quibusdam dolorum temporibus aliquam, fugit qui quo neque consequatur dolor.</p>
-            </div>
-            <div class="box">
-                <h4>post-graduation</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo esse sapiente, voluptates amet quibusdam dolorum temporibus aliquam, aliquam fugit qui voluptatibus accusamus.</p>
-            </div>
+    </div>
+    <div class="container">
+<div class="address-contact-container">
+    <div class="address">
+        <div class="row">
+            <i class="fas fa-house-user"></i>
+            <p><strong>xyz road abc building</strong><br>
+            <em>Lorem ipsum dolor sit.</em></p>
+        </div>
+        <div class="row">
+            <i class="fas fa-phone-alt"></i>
+            <p><strong>joe dehon</strong><br>
+            <em>+1 332 234 432</em></p>
+        </div>
+        <div class="row">
+            <i class="far fa-envelope"></i>
+            <p><strong>someone@domain.ext</strong><br>
+            <em>Lorem ipsum dolor sit.</em></p>
+        </div>
+    </div>
+<!-- start comment -->
+    <div class="leave-comment">
+        <div class="comment-form-content">
+            <h4>Leave a comment</h4>
+            <form action="">
+                <input class="input" type="text" name="name" placeholder="username">
+                <input class="input" type="email" name="mail" placeholder="e-mail">
+                <textarea class="input" name="comment" placeholder="Write ..." ></textarea>
+            </form>
+                <input class="button" type="submit" value="submit">
         </div>
     </div>
 </div>
-<!-- end courses section -->
+</div>
+</div>
+<!-- end comment -->
 
-<!-- start thanks for visiting section -->
-<div class="thanks">
-    <div class="container">
-        <div class="main-heading">
-            <h3>courses we offer</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        </div>
-        <div class="thanks-content">
-        <div class="one"><p>Receive Your Gift</p></div>
-        <div class="two"><p>Receive Your Gift</p></div>
-        <div class="three"><p>Receive Your Gift</p></div>
-        <div class="four"><p>Receive Your Gift</p></div>
-        <div class="five"><p>Receive Your Gift</p></div>
-        <div class="six"><p>Receive Your Gift</p></div>
-        </div>
-</div>
-</div>
-<!-- end thanks for visiting section -->
+<!-- end find us content -->
+
+
 
 <!-- start footer -->
 <div class="footer">
@@ -91,8 +95,7 @@
     </div>
 </div>
 <!-- end footer -->
-
-<!--------- js script -------->
+<!----------------- js script onclick function ------>
 <script>
     var sideNav = document.getElementById("sideNav");
     function openNav(){
@@ -102,6 +105,4 @@
         sideNav.style.right = "-200px";
     }
 </script>
-
 </div>
-<!-- end about landing -->

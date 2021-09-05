@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eduford University</title>
+    <!-- styling file -->
+    <link rel="stylesheet" href="../css/blog.css">
+    <!-- normalize file -->
+    <link rel="stylesheet" href="../css/normalize.css">
+    <!-- icons library -->
+    <link rel="stylesheet" href="../css/all.min.css">
+    <!-- main font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- start landing -->
+    <div class="landing">
+        <div class="container">
+        <div class="nav">
+              <a href="../index.html"><img src="../imgs/logo.png" alt="" class="logo"></a>
+            <i class="fas fa-bars open-icon" onclick="openNav()"></i>
+            <ul id="sideNav">
+                <i class="fas fa-times close-icon" onclick="closeNav()"></i>
+                <li><a href="../index.html">home</a></li>
+                <li><a href="about.html">about</a></li>
+                <li><a href="course.html">course</a></li>
+                <li><a href="blog.html">blog</a></li>
+                <li><a href="find.html">contact</a></li>
+            </ul>
+        </div>
+        <div class="text">
+            <h1>our certificate & online programs for 2021</h1>
+        </div>
+    </div>
+</div>
+<!-- end landing -->
+
+<!-- start blog content -->
+<div class="blog">
+    <div class="container">
+        <div class="img-box">
+           <div class="certif-img">
+            <img src="../imgs/certificate.jpg" alt="">
+           </div>
+            <h4 class="head-title">manager's word :</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto necessitatibus sequi maiores dicta.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi fuga corporis, exercitationem dolores explicabo fugit doloremque nisi ab incidunt reiciendis quasi harum dignissimos ipsum facilis laboriosam provident reprehenderit saepe velit!
+            </p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda, sint? Assumenda quo architecto tempore, excepturi, quaerat, corrupti blanditiis nobis veritatis omnis aliquam expedita iusto. Corporis deserunt, exercitationem sit, aliquam quae perferendis tempora voluptas placeat repellendus nesciunt cumque eum temporibus neque, labore possimus officia recusandae. Consequuntur soluta alias amet aliquid esse.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores quis eveniet error, soluta atque temporibus accusamus molestias vel, eius autem, totam dolorum nulla voluptatem! Ut nulla, aperiam, qui alias necessitatibus veritatis consequuntur totam magnam accusamus, voluptatem amet modi maiores dignissimos. Ut, amet autem. Optio commodi cumque quas nulla dolore at vitae vero maiores, hic perspiciatis voluptatem eaque praesentium nesciunt velit!</p>
+<!-- start comment -->
+            <div class="leave-comment">
+                <div class="comment-form-content">
+                    <h4>Leave a comment</h4>
+                    <form action="">
+                        <input class="input" type="text" name="name" placeholder="username">
+                        <input class="input" type="email" name="mail" placeholder="e-mail">
+                        <textarea class="input" name="comment" placeholder="Write ..." ></textarea>
+                    </form>
+                        <input class="button" type="submit" value="submit">
+                </div>
+            </div>
+        </div>
+<!-- end comment -->
+        <div class="blog-table">
+           <div class="table-head">
+               <h4>post categoris</h4>
+           </div>
+           
+           <div class="row">
+               <span>data sientist</span>
+               <span>25</span>
+           </div>
+           <div class="row not">
+               <span>web-dev</span>
+               <span>30</span>
+           </div>
+           <div class="row">
+               <span>business analytic</span>
+               <span>18</span>
+           </div>
+           <div class="row not">
+               <span>web-dev</span>
+               <span>30</span>
+           </div>
+           <div class="row">
+               <span>business analytic</span>
+               <span>18</span>
+           </div>
+           <div class="row not">
+               <span>web-dev</span>
+               <span>30</span>
+           </div>
+           <div class="row">
+               <span>business analytic</span>
+               <span>18</span>
+           </div>
+           <div class="row not">
+            <span>business analytic</span>
+            <span>18</span>
+        </div>
+        </div>
+    </div>
+</div>
+<!-- end blog content -->
+
+<!-- start footer -->
+<div class="footer">
+    <div class="content">
+        <p class="copy"><i class="far fa-copyright"></i>all rights reserved 2021</p>
+        <p>created by <span><a title="Linkedin" href="https://www.linkedin.com/in/ahmed-errajaai-822847199/"> Ahmed ERRAJAAI </a><a title="Github" href="https://github.com/AhmedERRAJAAI"><i class="fab fa-github"></i></a> </span></p>
+    </div>
+</div>
+<!-- end footer -->
+
+<!--------- js script -------->
+<script>
+    var sideNav = document.getElementById("sideNav");
+    function openNav(){
+        sideNav.style.right = "0";
+    }
+    function closeNav(){
+        sideNav.style.right = "-200px";
+    }
+</script>
+
+</div>

@@ -79,8 +79,6 @@ a{
 
 
 /* start-nd component */
-
-/* end-nd component */
 .button{
     text-transform: uppercase;
     color: white;
@@ -88,12 +86,15 @@ a{
     padding: 10px 15px;
     transition: 0.15s;
     position: relative;
+    cursor: pointer;
 }
 .button:hover{
     background-color: tomato;
     border-color: tomato;
     box-shadow: 0px 0px 30px 5px tomato;
 }
+/* end-nd component */
+
 /* end components */
 
 /* start landing */
@@ -232,7 +233,7 @@ a{
     width: 90%;
 }
 .landing .text h1{
-    font-size: 80px;
+    font-size: 45px;
     margin-bottom: 0;
     text-transform: capitalize;
 }
@@ -271,7 +272,7 @@ a{
 
 @media (max-width:768px){
     .landing .text h1{
-        font-size: 40px;
+        font-size: 30px;
     }
     .landing .text p{
         font-size: 14px;
@@ -287,151 +288,115 @@ a{
     }
 }
 /* end landing */
-/* start courses section */
-.courses{
+
+.blog{
     padding-bottom: var(--main-padding);
 }
-.courses .container .courses-types{
-     width: 100%;
-     display: flex;
-     justify-content: space-evenly;
-     flex-wrap: wrap;
-     
+.blog .container{
+    display: flex;
+    justify-content: space-between;
 }
-.courses .box{
-    min-width: 300px;
-    flex: 1;
-    text-align: center;
-    padding: 30px 10px;
-    background-color: #fff3f3;
-    border-radius: 8px;
-    transition: 0.2s;
-    margin: 20px auto 0;
+.blog .img-box{
+    width: 60%;
 }
-@media (min-width:664px){
-    .courses .box{
-        margin-left: 10px;
-        margin-right: 10px;
+@media (max-width:768px){
+    .blog .container{
+        flex-direction: column-reverse;
+    }
+    .blog .img-box{
+        width: 100%;
     }
 }
-.courses .box:hover{
-    box-shadow: 0px 0px 9px -1px #777;
-    transform: scale(1.02);
-}
-.courses .box h4{
+.blog .img-box .head-title{
+    margin-top: 15px;
     text-transform: capitalize;
-    padding-bottom: 20px;
+    text-decoration: underline;
 }
-.courses .box p{
-    color: var(--font-color);
-}
-/* end courses section */
-
-/* start thanks section */
-.thanks{
-    padding-bottom: var(--main-padding);
-}
-.thanks .thanks-content{
-    display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
-    justify-content: space-between;
-    grid-gap: 14px;
-}
-.thanks .thanks-content div{
+.blog .img-box img{
     width: 100%;
-    min-height: 250px;
-    margin-left: auto;
-    margin-right: auto;
-    border: 2px solid tomato;
-    background-color: tomato;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: 0.15s;
 }
-.thanks .thanks-content div:hover{
-    background: none;
-    color: none;
+.blog .img-box .certif-img{
+    width: 100%;
 }
-.thanks .thanks-content div p{
-    color: white;
+.blog .img-box p{
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    line-height: 1.4;
+    color: #777;
+}
+
+.blog .blog-table{
+    width: 30%;
+}
+@media (max-width:768px){
+    .blog .blog-table{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+.blog .blog-table h4{
     text-transform: capitalize;
-    font-size: 20px;
-    font-weight: bold;
-    transition: 0.15s;
+    text-align: center;
+    background-color: tomato;
+    padding: 10px;
+    color: white;
 }
-.thanks .thanks-content div:hover p{
-    color: transparent;
-    display: none;
+.blog .blog-table .row{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    text-transform: capitalize;
 }
-.thanks .thanks-content .one::after{
-    content:"UPLOADING ...";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    z-index: -1;
-    font-size: 20px;
-    font-weight: bold;
-    color: tomato;
+.blog .blog-table .not{
+    background-color: #ff5e5b52;
 }
-.thanks .thanks-content .two::after{ 
-    content:"UPLOADING ...";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    z-index: -1;
-    font-size: 20px;
-    font-weight: bold;
-    color: tomato;
+/* start comment */
+.leave-comment{
+    border: 1px solid tomato;
 }
-.thanks .thanks-content .three::after{
-    content:"UPLOADING ...";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    z-index: -1;
-    font-size: 20px;
-    font-weight: bold;
-    color: tomato;
+.leave-comment .comment-form-content h4{
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #444;
 }
-.thanks .thanks-content .four::after{
-    content:"UPLOADING ...";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    z-index: -1;
-    font-size: 20px;
-    font-weight: bold;
-    color: tomato;
+.leave-comment .comment-form-content .input:focus{
+    outline-color: tomato;
 }
-.thanks .thanks-content .five::after{
-    content:"UPLOADING ...";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    z-index: -1;
-    font-size: 20px;
-    font-weight: bold;
-    color: tomato;
+.leave-comment .comment-form-content .input{
+    width: 100%;
+    border: 1px solid #eee;
 }
-.thanks .thanks-content .six::after{
-    content:"UPLOADING ...";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    z-index: -1;
-    font-size: 20px;
-    font-weight: bold;
-    color: tomato;
+.leave-comment .comment-form-content{
+    display: block;
+    padding: 18px;
 }
-/* start thanks section */
+.leave-comment .comment-form-content input{
+    margin-bottom: 10px;
+    margin-top: 10px;
+    height: 40px;
+}
+.leave-comment .comment-form-content .input::placeholder{
+    padding: 8px;
+    color: #999;
+    text-transform: capitalize;
+}
+.leave-comment .comment-form-content textarea{
+    height: 140px;
+    margin-bottom: 20px;
+}
+.leave-comment .comment-form-content .button{
+    display: block;
+    color: #333;
+    border: tomato;
+    margin-left: auto;
+}
+/* end comment */
+
+
+
 
 /* start footer */
 .footer .content{
